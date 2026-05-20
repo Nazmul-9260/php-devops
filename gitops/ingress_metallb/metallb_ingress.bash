@@ -35,6 +35,8 @@ kubectl get pods -n metallb-system
 Configure Ingress:
 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.9.4/deploy/static/provider/baremetal/deploy.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.11.3/deploy/static/provider/baremetal/deploy.yaml
+
 kubectl get all -n ingress-nginx
 
 # Edit svc service type ClusterIP to Loadbalancer
